@@ -14,6 +14,10 @@
     --main-newsColor:#818a9b;
     --basic-toRightGradient:linear-gradient(to right,var(--main-colorOrange),var(--main-colorPink));
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: r-r;
 }
@@ -184,9 +188,9 @@ header .searchIcon i{
 }
 /* --------------------slider_style---------------------- */
 .slider{
-    background-image: url(../media/images/slide1.jpg);
+    /* background-image: url(../media/images/slide1.jpg);
     background-size:100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     height: 75vh;
     display: flex;
     align-items: center;
@@ -194,8 +198,11 @@ header .searchIcon i{
     color: var(--basicWhite-fontColor);
     
 }
+.slider img{
+    width: 100%;
+}
 .slider .slideContent{
-    margin-top:90px ;
+    text-align: left;
     padding: 20px;
     border-image-slice: 1;
     border-width: 4px;
@@ -204,6 +211,9 @@ header .searchIcon i{
     border-right: 0;
     border-bottom: 0;
     border-top: 0;
+    position: absolute;
+    bottom: 15vh;
+    left: -50px;
 }
 .slideContent h5{
     letter-spacing: 12px;
@@ -248,12 +258,27 @@ header .searchIcon i{
 }
 .slideIndicators{
     display: flex;
-    justify-content:flex-end ;
-    align-items: center;
+    list-style-type: none;
+    position: absolute;
+    bottom: 50%;
+    right: -10%;
+    left: auto;
+    transform: rotate(90deg);
+    margin-right: 9%;
 }
-.slideIndicators ul{
-list-style-type: circle;
-font-size: 30px;
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    margin-right: 10px;
+}
+.carousel-indicators li { 
+    max-width: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-image:var(--basic-toRightGradient);
+    border-color:transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 /* --------------------features_style---------------------- */
 .features{
@@ -609,7 +634,19 @@ font-style: italic;
 padding-bottom: 20px;
 }
 .summary .gallery img {
-border: 2px solid #cfcfcf;;
+border: 2px solid #cfcfcf;
+}
+.summary .posts img {
+    width: 100%;
+}
+.summary .posts a{
+    color:#7f8391;
+    font-family: o-r;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.summary .posts p{
+    font-size: 11px;
 }
 .summaryFooter{
     margin-top: -130px;
