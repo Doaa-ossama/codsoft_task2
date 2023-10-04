@@ -188,9 +188,6 @@ header .searchIcon i{
 }
 /* --------------------slider_style---------------------- */
 .slider{
-    /* background-image: url(../media/images/slide1.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat; */
     height: 75vh;
     display: flex;
     align-items: center;
@@ -389,9 +386,6 @@ header .searchIcon i{
     border-top-left-radius:42px;
     width: 80%;
     transition: all 0.5s ease-in;
-    /* padding: 0px  75px; */
-    /* display: inline-block;
-    margin-left:-60px; */
 }
 .servicesText:hover{
     border-bottom-left-radius:0;
